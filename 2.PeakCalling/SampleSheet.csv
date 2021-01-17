@@ -1,0 +1,13 @@
+﻿SampleName,FQLocation,Factor,Tissue,Antibody,InputToUse
+TwoBound,7Bound.927.s_2.r_1.fq.gz,UlexNeg_CD24_neg,Gut,5-hmC,FiveInput
+ThreeBound,8Bound.927.s_2.r_1.fq.gz,UlexNeg_CD24_neg,Gut,5-hmC,FiveInput
+SixBound_p2,1Bound_p2.927.s_1.r_1.fq.gz,UlexNeg_CD24_mid,Gut,5-hmC,FourInput
+SixBound,1Bound.927.s_1.r_1.fq.gz,UlexNeg_CD24_mid,Gut,5-hmC,FourInput
+SevenBound,2Bound.927.s_1.r_1.fq.gz,UlexNeg_CD24_neg,Gut,5-hmC,FiveInput
+OneBound_p2,6Bound_p2.927.s_2.r_1.fq.gz,UlexNeg_CD24_mid,Gut,5-hmC,FourInput
+OneBound,6Bound.927.s_2.r_1.fq.gz,UlexNeg_CD24_mid,Gut,5-hmC,FourInput
+FourInput,4Bound.927.s_2.r_1.fq.gz,UlexNeg_CD24_mid,Gut,Input,NA
+FourBound,4Input.927.s_1.r_1.fq.gz,UlexNeg_CD24_mid,Gut,5-hmC,FourInput
+FiveInput,5Bound.927.s_1.r_1.fq.gz,UlexNeg_CD24_neg,Gut,Input,NA
+FiveBound,5Input.927.s_2.r_1.fq.gz,UlexNeg_CD24_neg,Gut,5-hmC,FiveInput
+EightBound,3Bound.927.s_1.r_1.fq.gz,UlexNeg_CD24_neg,Gut,5-hmC,FiveInput

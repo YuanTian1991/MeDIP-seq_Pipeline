@@ -1,0 +1,11 @@
+SampleID,Tissue,Factor,Condition,Treatment,Replicate,bamReads,ControlID,bamControl,Peaks,PeakCaller
+TwoBound-neg,Gut,,neg,5hmC,1,../1.Preprocess/myBigWig/TwoBound.grey_filtered.sorted.bam,,../1.Preprocess/myBigWig/FiveInput.grey_filtered.sorted.bam,../2.PeakCalling/macs2/TwoBound_peaks.narrowPeak,narrow
+ThreeBound-neg,Gut,,neg,5hmC,2,../1.Preprocess/myBigWig/ThreeBound.grey_filtered.sorted.bam,,../1.Preprocess/myBigWig/FiveInput.grey_filtered.sorted.bam,../2.PeakCalling/macs2/ThreeBound_peaks.narrowPeak,narrow
+SixBound_p2-mid,Gut,,mid,5hmC,1,../1.Preprocess/myBigWig/SixBound_p2.grey_filtered.sorted.bam,,../1.Preprocess/myBigWig/FourInput.grey_filtered.sorted.bam,../2.PeakCalling/macs2/SixBound_p2_peaks.narrowPeak,narrow
+SixBound-mid,Gut,,mid,5hmC,2,../1.Preprocess/myBigWig/SixBound.grey_filtered.sorted.bam,,../1.Preprocess/myBigWig/FourInput.grey_filtered.sorted.bam,../2.PeakCalling/macs2/SixBound_peaks.narrowPeak,narrow
+SevenBound-neg,Gut,,neg,5hmC,3,../1.Preprocess/myBigWig/SevenBound.grey_filtered.sorted.bam,,../1.Preprocess/myBigWig/FiveInput.grey_filtered.sorted.bam,../2.PeakCalling/macs2/SevenBound_peaks.narrowPeak,narrow
+OneBound_p2-mid,Gut,,mid,5hmC,3,../1.Preprocess/myBigWig/OneBound_p2.grey_filtered.sorted.bam,,../1.Preprocess/myBigWig/FourInput.grey_filtered.sorted.bam,../2.PeakCalling/macs2/OneBound_p2_peaks.narrowPeak,narrow
+OneBound-mid,Gut,,mid,5hmC,4,../1.Preprocess/myBigWig/OneBound.grey_filtered.sorted.bam,,../1.Preprocess/myBigWig/FourInput.grey_filtered.sorted.bam,../2.PeakCalling/macs2/OneBound_peaks.narrowPeak,narrow
+FourBound-mid,Gut,,mid,5hmC,5,../1.Preprocess/myBigWig/FourBound.grey_filtered.sorted.bam,,../1.Preprocess/myBigWig/FourInput.grey_filtered.sorted.bam,../2.PeakCalling/macs2/FourBound_peaks.narrowPeak,narrow
+FiveBound-neg,Gut,,neg,5hmC,4,../1.Preprocess/myBigWig/FiveBound.grey_filtered.sorted.bam,,../1.Preprocess/myBigWig/FiveInput.grey_filtered.sorted.bam,../2.PeakCalling/macs2/FiveBound_peaks.narrowPeak,narrow
+EightBound-neg,Gut,,neg,5hmC,5,../1.Preprocess/myBigWig/EightBound.grey_filtered.sorted.bam,,../1.Preprocess/myBigWig/FiveInput.grey_filtered.sorted.bam,../2.PeakCalling/macs2/EightBound_peaks.narrowPeak,narrow
