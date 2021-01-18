@@ -26,17 +26,17 @@ write.csv(SampleList, file="SampleList.csv",quote=F, row.names=F)
 
 message("Differential Analysis")
 myDBA <- dba(sampleSheet="./SampleList.csv", dir="./")
-#myDBA_consensus <- dba.peakset(myDBA, consensus=c(DBA_CONDITION), minOverlap=2)
-#consensus <- dba(myDBA_consensus, mask=myDBA_consensus$masks$Consensus, minOverlap=1)
-#consensus_peaks <- dba.peakset(consensus, bRetrieve=TRUE)
-
-#myDBA <- dba.count(myDBA, peaks=consensus_peaks, summits=250, bParallel=40)
 myDBA <- dba.count(myDBA, summits=250, bParallel=40, minOverlap=0.33, bRemoveDuplicates=TRUE)
 
-myDBA <- dba.normalize(myDBA, method=DBA_ALL_METHODS, normalize=DBA_NORM_NATIVE, background=TRUE)
+myDBA <- dba.normalize(myDBA, normalize=DBA_NORM_NATIVE) # This is the final choosen normalisation method. Below one is also not bad.
+# myDBA <- dba.normalize(myDBA,  normalize=DBA_NORM_LIB, library=DBA_LIBSIZE_PEAKREADS, background=FALSE)
+
 myDBA <- dba.contrast(myDBA, categories=DBA_CONDITION)
 myDBA <- dba.analyze(myDBA, bParallel=40, bBlacklist=FALSE ,bGreylist=FALSE)
 rownames(myDBA$binding) <- 1:nrow(myDBA$binding)
 myDBA.peaks <- dba.report(myDBA, bCalled=TRUE, th=1)
+dba.plotMA(myDBA, method=DBA_DESEQ2, sub="log consentration")
 
-save(myDBA, myDBA.peaks, file="myDBA.rda")
+save(myDBA, myDBA.peaks, file="ResultDBA.rda")
+save(myDBA.peaks, file="peaks_lib.rda")
+
