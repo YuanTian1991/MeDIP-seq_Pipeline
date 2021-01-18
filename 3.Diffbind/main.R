@@ -34,9 +34,12 @@ myDBA <- dba.normalize(myDBA, normalize=DBA_NORM_NATIVE) # This is the final cho
 myDBA <- dba.contrast(myDBA, categories=DBA_CONDITION)
 myDBA <- dba.analyze(myDBA, bParallel=40, bBlacklist=FALSE ,bGreylist=FALSE)
 rownames(myDBA$binding) <- 1:nrow(myDBA$binding)
+
 myDBA.peaks <- dba.report(myDBA, bCalled=TRUE, th=1)
+BindingAffinityMatrix <- dba.peakset(myDBA, bRetrieve=TRUE)
 dba.plotMA(myDBA, method=DBA_DESEQ2, sub="log consentration")
 
 save(myDBA, myDBA.peaks, file="ResultDBA.rda")
 save(myDBA.peaks, file="peaks_lib.rda")
+save(BindingAffinityMatrix, file="BindingAffinityMatrix.rda")
 
